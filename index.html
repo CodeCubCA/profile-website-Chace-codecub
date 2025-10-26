@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chace Liu - Coding Portfolio</title>
+    <title>Chace - Coding Portfolio</title>
     <style>
         * {
             margin: 0;
@@ -217,6 +217,961 @@
             font-weight: 400;
             opacity: 0.85;
             margin-top: 1rem;
+        }
+
+        /* Ultra-Complex Sophisticated Logo Masterpiece */
+        .logo-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 3rem;
+            gap: 2rem;
+            position: relative;
+            filter: drop-shadow(0 0 50px rgba(0, 128, 255, 0.3));
+        }
+
+        .logo-wrapper {
+            position: relative;
+            perspective: 2000px;
+            transform-style: preserve-3d;
+        }
+
+        .logo-icon {
+            position: relative;
+            width: 160px;
+            height: 160px;
+            cursor: pointer;
+            animation: logoMainFloat 8s ease-in-out infinite, logoComplexRotation 12s linear infinite;
+            transition: all 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            transform-style: preserve-3d;
+        }
+
+        .logo-icon:hover {
+            transform: scale(1.25) rotateY(25deg) rotateX(15deg);
+            filter: brightness(1.3) saturate(1.2);
+            animation-duration: 4s;
+        }
+
+        .logo-core {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            background:
+                radial-gradient(circle at 20% 20%, rgba(255, 255, 255, 0.8) 0%, transparent 30%),
+                radial-gradient(circle at 80% 80%, rgba(0, 255, 200, 0.4) 0%, transparent 40%),
+                conic-gradient(from 0deg,
+                    rgba(0, 128, 255, 1) 0deg,
+                    rgba(128, 0, 255, 0.9) 60deg,
+                    rgba(255, 0, 128, 0.8) 120deg,
+                    rgba(255, 128, 0, 0.9) 180deg,
+                    rgba(128, 255, 0, 0.8) 240deg,
+                    rgba(0, 255, 255, 0.9) 300deg,
+                    rgba(0, 128, 255, 1) 360deg),
+                radial-gradient(ellipse at center,
+                    rgba(0, 128, 255, 0.9) 0%,
+                    rgba(0, 68, 153, 0.95) 30%,
+                    rgba(0, 42, 96, 1) 60%,
+                    rgba(0, 20, 48, 1) 100%);
+            box-shadow:
+                0 0 60px rgba(0, 128, 255, 0.8),
+                0 0 120px rgba(0, 102, 204, 0.6),
+                0 0 180px rgba(0, 68, 153, 0.4),
+                0 0 240px rgba(255, 0, 128, 0.3),
+                inset 0 0 40px rgba(255, 255, 255, 0.3),
+                inset 0 0 80px rgba(0, 170, 255, 0.2),
+                inset 0 0 120px rgba(128, 0, 255, 0.15);
+            animation: logoCorePulse 5s ease-in-out infinite, coreColorShift 15s ease-in-out infinite;
+            overflow: hidden;
+            backdrop-filter: blur(2px);
+        }
+
+        .logo-core::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: conic-gradient(from 0deg,
+                transparent 0deg,
+                rgba(255, 255, 255, 0.6) 30deg,
+                transparent 60deg,
+                rgba(0, 255, 255, 0.4) 120deg,
+                transparent 150deg,
+                rgba(255, 0, 255, 0.5) 210deg,
+                transparent 240deg,
+                rgba(255, 255, 0, 0.4) 300deg,
+                transparent 330deg,
+                transparent 360deg);
+            border-radius: 50%;
+            animation: logoSparkle 4s linear infinite;
+            z-index: 1;
+        }
+
+        .logo-core::after {
+            content: '';
+            position: absolute;
+            top: 10%;
+            left: 10%;
+            right: 10%;
+            bottom: 10%;
+            background: radial-gradient(circle,
+                rgba(255, 255, 255, 0.4) 0%,
+                rgba(255, 255, 255, 0.2) 30%,
+                transparent 70%);
+            border-radius: 50%;
+            filter: blur(8px);
+            animation: innerGlow 6s ease-in-out infinite;
+            z-index: 1;
+        }
+
+        .logo-ring {
+            position: absolute;
+            border-radius: 50%;
+            border: 3px solid transparent;
+            background-clip: border-box;
+            animation: logoRingRotate 10s linear infinite;
+        }
+
+        .ring-1 {
+            top: -20px;
+            left: -20px;
+            right: -20px;
+            bottom: -20px;
+            background: conic-gradient(from 0deg,
+                rgba(0, 128, 255, 0.9) 0deg,
+                rgba(255, 0, 128, 0.8) 72deg,
+                rgba(128, 255, 0, 0.7) 144deg,
+                rgba(255, 128, 0, 0.8) 216deg,
+                rgba(128, 0, 255, 0.9) 288deg,
+                rgba(0, 128, 255, 0.9) 360deg);
+            animation-duration: 8s;
+            animation-direction: normal;
+            filter: drop-shadow(0 0 20px rgba(0, 128, 255, 0.6));
+        }
+
+        .ring-2 {
+            top: -35px;
+            left: -35px;
+            right: -35px;
+            bottom: -35px;
+            background: conic-gradient(from 45deg,
+                rgba(255, 0, 255, 0.8) 0deg,
+                rgba(0, 255, 255, 0.7) 60deg,
+                rgba(255, 255, 0, 0.6) 120deg,
+                rgba(255, 0, 0, 0.7) 180deg,
+                rgba(0, 255, 0, 0.6) 240deg,
+                rgba(0, 0, 255, 0.7) 300deg,
+                rgba(255, 0, 255, 0.8) 360deg);
+            animation-duration: 12s;
+            animation-direction: reverse;
+            opacity: 0.8;
+            filter: drop-shadow(0 0 30px rgba(255, 0, 255, 0.4));
+        }
+
+        .ring-3 {
+            top: -50px;
+            left: -50px;
+            right: -50px;
+            bottom: -50px;
+            background: conic-gradient(from 90deg,
+                rgba(0, 255, 128, 0.7) 0deg,
+                rgba(128, 255, 255, 0.6) 51deg,
+                rgba(255, 128, 255, 0.5) 102deg,
+                rgba(255, 255, 128, 0.6) 153deg,
+                rgba(128, 128, 255, 0.5) 204deg,
+                rgba(255, 128, 128, 0.6) 255deg,
+                rgba(128, 255, 128, 0.5) 306deg,
+                rgba(0, 255, 128, 0.7) 360deg);
+            animation-duration: 16s;
+            animation-direction: normal;
+            opacity: 0.6;
+            filter: drop-shadow(0 0 40px rgba(0, 255, 128, 0.3));
+        }
+
+        .ring-4 {
+            top: -65px;
+            left: -65px;
+            right: -65px;
+            bottom: -65px;
+            background: conic-gradient(from 135deg,
+                rgba(255, 192, 128, 0.6) 0deg,
+                rgba(128, 192, 255, 0.5) 45deg,
+                rgba(255, 128, 192, 0.4) 90deg,
+                rgba(192, 255, 128, 0.5) 135deg,
+                rgba(128, 255, 192, 0.4) 180deg,
+                rgba(192, 128, 255, 0.5) 225deg,
+                rgba(255, 255, 128, 0.4) 270deg,
+                rgba(128, 255, 255, 0.5) 315deg,
+                rgba(255, 192, 128, 0.6) 360deg);
+            animation-duration: 20s;
+            animation-direction: reverse;
+            opacity: 0.4;
+            filter: drop-shadow(0 0 50px rgba(255, 192, 128, 0.2));
+        }
+
+        .ring-5 {
+            top: -80px;
+            left: -80px;
+            right: -80px;
+            bottom: -80px;
+            background: conic-gradient(from 180deg,
+                rgba(64, 224, 255, 0.5) 0deg,
+                rgba(255, 64, 224, 0.4) 30deg,
+                rgba(224, 255, 64, 0.3) 60deg,
+                rgba(255, 224, 64, 0.4) 90deg,
+                rgba(64, 255, 224, 0.3) 120deg,
+                rgba(224, 64, 255, 0.4) 150deg,
+                rgba(255, 255, 64, 0.3) 180deg,
+                rgba(64, 255, 255, 0.4) 210deg,
+                rgba(255, 64, 64, 0.3) 240deg,
+                rgba(64, 64, 255, 0.4) 270deg,
+                rgba(255, 128, 64, 0.3) 300deg,
+                rgba(128, 255, 128, 0.4) 330deg,
+                rgba(64, 224, 255, 0.5) 360deg);
+            animation-duration: 25s;
+            animation-direction: normal;
+            opacity: 0.3;
+            filter: drop-shadow(0 0 60px rgba(64, 224, 255, 0.2));
+        }
+
+        .logo-center {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 10;
+        }
+
+        .logo-symbol {
+            font-size: 3.2rem;
+            font-weight: 900;
+            color: #ffffff;
+            text-shadow:
+                0 0 15px rgba(255, 255, 255, 1),
+                0 0 30px rgba(0, 170, 255, 0.8),
+                0 0 45px rgba(0, 128, 255, 0.6),
+                0 0 60px rgba(255, 0, 255, 0.4),
+                0 0 75px rgba(255, 255, 0, 0.3);
+            letter-spacing: -0.05em;
+            animation: logoSymbolGlow 4s ease-in-out infinite, symbolColorCycle 8s ease-in-out infinite;
+            background: linear-gradient(45deg,
+                #ffffff 0%,
+                #00ffff 15%,
+                #ff00ff 30%,
+                #ffff00 45%,
+                #ffffff 60%,
+                #ff8000 75%,
+                #8000ff 85%,
+                #ffffff 100%);
+            background-size: 400% 400%;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.4));
+            position: relative;
+        }
+
+        .logo-symbol::before {
+            content: 'C';
+            position: absolute;
+            top: 0;
+            left: 0;
+            color: rgba(255, 255, 255, 0.1);
+            filter: blur(8px);
+            animation: symbolBlur 3s ease-in-out infinite;
+            z-index: -1;
+        }
+
+        .logo-particles {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 300px;
+            height: 300px;
+            pointer-events: none;
+        }
+
+        .particle {
+            position: absolute;
+            border-radius: 50%;
+            animation: particleOrbit 12s linear infinite;
+        }
+
+        .particle-1 {
+            width: 6px; height: 6px;
+            background: radial-gradient(circle, rgba(0, 255, 255, 1) 0%, rgba(0, 128, 255, 0.8) 50%, transparent 100%);
+            animation-delay: 0s;
+        }
+        .particle-2 {
+            width: 5px; height: 5px;
+            background: radial-gradient(circle, rgba(255, 0, 255, 1) 0%, rgba(255, 0, 128, 0.8) 50%, transparent 100%);
+            animation-delay: -2s;
+        }
+        .particle-3 {
+            width: 7px; height: 7px;
+            background: radial-gradient(circle, rgba(255, 255, 0, 1) 0%, rgba(255, 128, 0, 0.8) 50%, transparent 100%);
+            animation-delay: -4s;
+        }
+        .particle-4 {
+            width: 4px; height: 4px;
+            background: radial-gradient(circle, rgba(0, 255, 128, 1) 0%, rgba(128, 255, 0, 0.8) 50%, transparent 100%);
+            animation-delay: -6s;
+        }
+        .particle-5 {
+            width: 8px; height: 8px;
+            background: radial-gradient(circle, rgba(128, 0, 255, 1) 0%, rgba(255, 0, 255, 0.8) 50%, transparent 100%);
+            animation-delay: -8s;
+        }
+        .particle-6 {
+            width: 5px; height: 5px;
+            background: radial-gradient(circle, rgba(255, 128, 255, 1) 0%, rgba(255, 255, 128, 0.8) 50%, transparent 100%);
+            animation-delay: -10s;
+        }
+
+        .micro-particles {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 200px;
+            height: 200px;
+            pointer-events: none;
+        }
+
+        .micro-particle {
+            position: absolute;
+            width: 2px;
+            height: 2px;
+            background: rgba(255, 255, 255, 0.8);
+            border-radius: 50%;
+            animation: microParticleFloat 8s ease-in-out infinite;
+        }
+
+        .micro-particle-1 { animation-delay: 0s; top: 20%; left: 30%; }
+        .micro-particle-2 { animation-delay: -1s; top: 70%; left: 80%; }
+        .micro-particle-3 { animation-delay: -2s; top: 40%; left: 10%; }
+        .micro-particle-4 { animation-delay: -3s; top: 90%; left: 50%; }
+        .micro-particle-5 { animation-delay: -4s; top: 10%; left: 70%; }
+        .micro-particle-6 { animation-delay: -5s; top: 60%; left: 20%; }
+        .micro-particle-7 { animation-delay: -6s; top: 80%; left: 90%; }
+        .micro-particle-8 { animation-delay: -7s; top: 30%; left: 60%; }
+
+        .energy-waves {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 160px;
+            height: 160px;
+            pointer-events: none;
+        }
+
+        .energy-wave {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            border: 1px solid rgba(0, 255, 255, 0.3);
+            border-radius: 50%;
+            animation: energyWave 6s ease-out infinite;
+        }
+
+        .wave-1 { animation-delay: 0s; }
+        .wave-2 { animation-delay: -1s; }
+        .wave-3 { animation-delay: -2s; }
+        .wave-4 { animation-delay: -3s; }
+        .wave-5 { animation-delay: -4s; }
+        .wave-6 { animation-delay: -5s; }
+
+        .logo-glow {
+            position: absolute;
+            top: -80px;
+            left: -80px;
+            right: -80px;
+            bottom: -80px;
+            background: radial-gradient(circle,
+                rgba(0, 128, 255, 0.4) 0%,
+                rgba(255, 0, 128, 0.3) 20%,
+                rgba(128, 255, 0, 0.2) 40%,
+                rgba(255, 128, 0, 0.25) 60%,
+                rgba(128, 0, 255, 0.2) 80%,
+                transparent 100%);
+            border-radius: 50%;
+            filter: blur(40px);
+            animation: logoGlowPulse 6s ease-in-out infinite, glowColorShift 10s ease-in-out infinite;
+            z-index: -2;
+        }
+
+        .logo-pulse-rings {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: -1;
+        }
+
+        .pulse-ring {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            border: 2px solid rgba(0, 170, 255, 0.6);
+            border-radius: 50%;
+            animation: logoPulseRing 4s ease-out infinite;
+        }
+
+        .pulse-ring-1 {
+            width: 160px; height: 160px;
+            animation-delay: 0s;
+            border-color: rgba(0, 255, 255, 0.6);
+        }
+        .pulse-ring-2 {
+            width: 160px; height: 160px;
+            animation-delay: -0.8s;
+            border-color: rgba(255, 0, 255, 0.4);
+        }
+        .pulse-ring-3 {
+            width: 160px; height: 160px;
+            animation-delay: -1.6s;
+            border-color: rgba(255, 255, 0, 0.5);
+        }
+        .pulse-ring-4 {
+            width: 160px; height: 160px;
+            animation-delay: -2.4s;
+            border-color: rgba(0, 255, 128, 0.4);
+        }
+        .pulse-ring-5 {
+            width: 160px; height: 160px;
+            animation-delay: -3.2s;
+            border-color: rgba(255, 128, 0, 0.5);
+        }
+
+        .geometric-pattern {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 120px;
+            height: 120px;
+            z-index: 1;
+        }
+
+        .hexagon {
+            position: absolute;
+            width: 40px;
+            height: 40px;
+            background: linear-gradient(45deg, rgba(255, 255, 255, 0.1), rgba(0, 255, 255, 0.2));
+            clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+            animation: hexagonRotate 15s linear infinite;
+        }
+
+        .hex-1 { top: 10px; left: 40px; animation-delay: 0s; }
+        .hex-2 { top: 40px; left: 10px; animation-delay: -2s; }
+        .hex-3 { top: 40px; left: 70px; animation-delay: -4s; }
+        .hex-4 { top: 70px; left: 40px; animation-delay: -6s; }
+
+        .logo-text {
+            font-size: 3.5rem;
+            font-weight: 900;
+            background: linear-gradient(135deg,
+                #ffffff 0%,
+                #e8f4f8 15%,
+                #0080ff 30%,
+                #00aaff 45%,
+                #ffffff 60%,
+                #00aaff 75%,
+                #0080ff 85%,
+                #ffffff 100%);
+            background-size: 300% 300%;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-shadow:
+                0 0 20px rgba(0, 128, 255, 0.3),
+                0 8px 16px rgba(0, 0, 0, 0.2);
+            letter-spacing: -0.02em;
+            animation: logoTextFlow 4s ease-in-out infinite;
+            margin-left: 0.5rem;
+            position: relative;
+            filter: drop-shadow(0 4px 8px rgba(0, 128, 255, 0.2));
+        }
+
+        .logo-text::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(90deg,
+                transparent 0%,
+                rgba(255, 255, 255, 0.4) 50%,
+                transparent 100%);
+            transform: translateX(-100%);
+            animation: logoTextShine 3s ease-in-out infinite;
+            z-index: 1;
+            mix-blend-mode: overlay;
+        }
+
+        /* Ultra-Complex Keyframe Animations */
+        @keyframes logoMainFloat {
+            0%, 100% {
+                transform: translateY(0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+            }
+            16.67% {
+                transform: translateY(-15px) rotateX(3deg) rotateY(3deg) rotateZ(1deg);
+            }
+            33.33% {
+                transform: translateY(-8px) rotateX(-2deg) rotateY(5deg) rotateZ(-1deg);
+            }
+            50% {
+                transform: translateY(-20px) rotateX(0deg) rotateY(8deg) rotateZ(2deg);
+            }
+            66.67% {
+                transform: translateY(-12px) rotateX(4deg) rotateY(3deg) rotateZ(-1deg);
+            }
+            83.33% {
+                transform: translateY(-5px) rotateX(-3deg) rotateY(-2deg) rotateZ(1deg);
+            }
+        }
+
+        @keyframes logoComplexRotation {
+            0% { transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg); }
+            25% { transform: rotateX(90deg) rotateY(90deg) rotateZ(90deg); }
+            50% { transform: rotateX(180deg) rotateY(180deg) rotateZ(180deg); }
+            75% { transform: rotateX(270deg) rotateY(270deg) rotateZ(270deg); }
+            100% { transform: rotateX(360deg) rotateY(360deg) rotateZ(360deg); }
+        }
+
+        @keyframes logoCorePulse {
+            0%, 100% {
+                box-shadow:
+                    0 0 60px rgba(0, 128, 255, 0.8),
+                    0 0 120px rgba(0, 102, 204, 0.6),
+                    0 0 180px rgba(0, 68, 153, 0.4),
+                    0 0 240px rgba(255, 0, 128, 0.3),
+                    inset 0 0 40px rgba(255, 255, 255, 0.3),
+                    inset 0 0 80px rgba(0, 170, 255, 0.2),
+                    inset 0 0 120px rgba(128, 0, 255, 0.15);
+            }
+            33% {
+                box-shadow:
+                    0 0 80px rgba(255, 0, 128, 0.9),
+                    0 0 160px rgba(255, 128, 0, 0.7),
+                    0 0 240px rgba(128, 255, 0, 0.5),
+                    0 0 320px rgba(0, 255, 255, 0.4),
+                    inset 0 0 60px rgba(255, 255, 255, 0.4),
+                    inset 0 0 100px rgba(255, 0, 255, 0.3),
+                    inset 0 0 140px rgba(255, 255, 0, 0.2);
+            }
+            66% {
+                box-shadow:
+                    0 0 100px rgba(128, 0, 255, 1),
+                    0 0 200px rgba(0, 255, 128, 0.8),
+                    0 0 300px rgba(255, 255, 0, 0.6),
+                    0 0 400px rgba(255, 0, 255, 0.5),
+                    inset 0 0 80px rgba(255, 255, 255, 0.5),
+                    inset 0 0 120px rgba(0, 255, 255, 0.4),
+                    inset 0 0 160px rgba(255, 128, 128, 0.25);
+            }
+        }
+
+        @keyframes coreColorShift {
+            0%, 100% { filter: hue-rotate(0deg) saturate(1) brightness(1); }
+            20% { filter: hue-rotate(72deg) saturate(1.2) brightness(1.1); }
+            40% { filter: hue-rotate(144deg) saturate(1.4) brightness(1.2); }
+            60% { filter: hue-rotate(216deg) saturate(1.6) brightness(1.3); }
+            80% { filter: hue-rotate(288deg) saturate(1.8) brightness(1.4); }
+        }
+
+        @keyframes logoSparkle {
+            0% { transform: rotate(0deg) scale(1); opacity: 1; }
+            25% { transform: rotate(90deg) scale(1.2); opacity: 0.8; }
+            50% { transform: rotate(180deg) scale(0.8); opacity: 0.6; }
+            75% { transform: rotate(270deg) scale(1.1); opacity: 0.9; }
+            100% { transform: rotate(360deg) scale(1); opacity: 1; }
+        }
+
+        @keyframes innerGlow {
+            0%, 100% { opacity: 0.4; transform: scale(1); }
+            33% { opacity: 0.7; transform: scale(1.1); }
+            66% { opacity: 0.5; transform: scale(0.9); }
+        }
+
+        @keyframes logoRingRotate {
+            0% { transform: rotate(0deg) scale(1); }
+            25% { transform: rotate(90deg) scale(1.05); }
+            50% { transform: rotate(180deg) scale(0.95); }
+            75% { transform: rotate(270deg) scale(1.02); }
+            100% { transform: rotate(360deg) scale(1); }
+        }
+
+        @keyframes logoSymbolGlow {
+            0%, 100% {
+                text-shadow:
+                    0 0 15px rgba(255, 255, 255, 1),
+                    0 0 30px rgba(0, 170, 255, 0.8),
+                    0 0 45px rgba(0, 128, 255, 0.6),
+                    0 0 60px rgba(255, 0, 255, 0.4),
+                    0 0 75px rgba(255, 255, 0, 0.3);
+                background-position: 0% 50%;
+            }
+            25% {
+                text-shadow:
+                    0 0 20px rgba(255, 255, 255, 1),
+                    0 0 40px rgba(255, 0, 128, 0.9),
+                    0 0 60px rgba(128, 255, 0, 0.7),
+                    0 0 80px rgba(0, 255, 255, 0.5),
+                    0 0 100px rgba(255, 128, 0, 0.4);
+                background-position: 50% 25%;
+            }
+            50% {
+                text-shadow:
+                    0 0 25px rgba(255, 255, 255, 1),
+                    0 0 50px rgba(128, 0, 255, 1),
+                    0 0 75px rgba(255, 255, 0, 0.8),
+                    0 0 100px rgba(0, 255, 128, 0.6),
+                    0 0 125px rgba(255, 0, 255, 0.5);
+                background-position: 100% 50%;
+            }
+            75% {
+                text-shadow:
+                    0 0 20px rgba(255, 255, 255, 1),
+                    0 0 40px rgba(0, 255, 255, 0.9),
+                    0 0 60px rgba(255, 128, 255, 0.7),
+                    0 0 80px rgba(128, 255, 128, 0.5),
+                    0 0 100px rgba(255, 255, 128, 0.4);
+                background-position: 50% 75%;
+            }
+        }
+
+        @keyframes symbolColorCycle {
+            0%, 100% { background-position: 0% 50%; }
+            12.5% { background-position: 12.5% 25%; }
+            25% { background-position: 25% 50%; }
+            37.5% { background-position: 37.5% 75%; }
+            50% { background-position: 50% 100%; }
+            62.5% { background-position: 62.5% 75%; }
+            75% { background-position: 75% 50%; }
+            87.5% { background-position: 87.5% 25%; }
+        }
+
+        @keyframes symbolBlur {
+            0%, 100% { filter: blur(8px); opacity: 0.1; }
+            50% { filter: blur(12px); opacity: 0.2; }
+        }
+
+        @keyframes particleOrbit {
+            0% {
+                transform: translate(-50%, -50%) rotate(0deg) translateX(120px) rotate(0deg);
+                opacity: 1;
+                filter: hue-rotate(0deg);
+            }
+            25% {
+                opacity: 0.8;
+                filter: hue-rotate(90deg);
+            }
+            50% {
+                opacity: 0.6;
+                filter: hue-rotate(180deg);
+            }
+            75% {
+                opacity: 0.9;
+                filter: hue-rotate(270deg);
+            }
+            100% {
+                transform: translate(-50%, -50%) rotate(360deg) translateX(120px) rotate(-360deg);
+                opacity: 1;
+                filter: hue-rotate(360deg);
+            }
+        }
+
+        @keyframes microParticleFloat {
+            0%, 100% {
+                transform: translateY(0px) translateX(0px) scale(1);
+                opacity: 0.8;
+            }
+            25% {
+                transform: translateY(-10px) translateX(5px) scale(1.2);
+                opacity: 1;
+            }
+            50% {
+                transform: translateY(-5px) translateX(-3px) scale(0.8);
+                opacity: 0.6;
+            }
+            75% {
+                transform: translateY(-15px) translateX(8px) scale(1.1);
+                opacity: 0.9;
+            }
+        }
+
+        @keyframes energyWave {
+            0% {
+                transform: scale(0.8);
+                opacity: 1;
+                border-color: rgba(0, 255, 255, 0.8);
+            }
+            25% {
+                transform: scale(1.2);
+                opacity: 0.7;
+                border-color: rgba(255, 0, 255, 0.6);
+            }
+            50% {
+                transform: scale(1.8);
+                opacity: 0.4;
+                border-color: rgba(255, 255, 0, 0.4);
+            }
+            75% {
+                transform: scale(2.5);
+                opacity: 0.2;
+                border-color: rgba(0, 255, 128, 0.3);
+            }
+            100% {
+                transform: scale(3.2);
+                opacity: 0;
+                border-color: rgba(255, 128, 0, 0.1);
+            }
+        }
+
+        @keyframes logoGlowPulse {
+            0%, 100% {
+                opacity: 0.6;
+                transform: scale(1);
+            }
+            20% {
+                opacity: 0.8;
+                transform: scale(1.1);
+            }
+            40% {
+                opacity: 1;
+                transform: scale(1.2);
+            }
+            60% {
+                opacity: 0.9;
+                transform: scale(1.15);
+            }
+            80% {
+                opacity: 0.7;
+                transform: scale(1.05);
+            }
+        }
+
+        @keyframes glowColorShift {
+            0%, 100% { filter: hue-rotate(0deg) brightness(1); }
+            25% { filter: hue-rotate(90deg) brightness(1.2); }
+            50% { filter: hue-rotate(180deg) brightness(1.4); }
+            75% { filter: hue-rotate(270deg) brightness(1.1); }
+        }
+
+        @keyframes logoPulseRing {
+            0% {
+                transform: translate(-50%, -50%) scale(0.8);
+                opacity: 1;
+            }
+            25% {
+                transform: translate(-50%, -50%) scale(1.2);
+                opacity: 0.8;
+            }
+            50% {
+                transform: translate(-50%, -50%) scale(1.8);
+                opacity: 0.5;
+            }
+            75% {
+                transform: translate(-50%, -50%) scale(2.5);
+                opacity: 0.2;
+            }
+            100% {
+                transform: translate(-50%, -50%) scale(3.2);
+                opacity: 0;
+            }
+        }
+
+        @keyframes hexagonRotate {
+            0% {
+                transform: rotate(0deg) scale(1);
+                opacity: 0.3;
+            }
+            25% {
+                transform: rotate(90deg) scale(1.1);
+                opacity: 0.5;
+            }
+            50% {
+                transform: rotate(180deg) scale(0.9);
+                opacity: 0.7;
+            }
+            75% {
+                transform: rotate(270deg) scale(1.05);
+                opacity: 0.4;
+            }
+            100% {
+                transform: rotate(360deg) scale(1);
+                opacity: 0.3;
+            }
+        }
+
+        @keyframes logoTextFlow {
+            0%, 100% {
+                background-position: 0% 50%;
+                filter: drop-shadow(0 4px 8px rgba(0, 128, 255, 0.2));
+            }
+            25% {
+                background-position: 50% 25%;
+                filter: drop-shadow(0 6px 12px rgba(0, 170, 255, 0.3));
+            }
+            50% {
+                background-position: 100% 50%;
+                filter: drop-shadow(0 8px 16px rgba(0, 128, 255, 0.4));
+            }
+            75% {
+                background-position: 50% 75%;
+                filter: drop-shadow(0 6px 12px rgba(0, 170, 255, 0.3));
+            }
+        }
+
+        @keyframes logoTextShine {
+            0% { transform: translateX(-100%); }
+            50% { transform: translateX(100%); }
+            100% { transform: translateX(100%); }
+        }
+
+        /* Responsive logo adjustments for ultra-complex design */
+        @media (max-width: 768px) {
+            .logo-container {
+                flex-direction: column;
+                gap: 1.5rem;
+                margin-bottom: 2.5rem;
+            }
+
+            .logo-icon {
+                width: 120px;
+                height: 120px;
+            }
+
+            .logo-symbol {
+                font-size: 2.4rem;
+            }
+
+            .logo-text {
+                font-size: 2.8rem;
+                margin-left: 0;
+            }
+
+            .logo-particles {
+                width: 220px;
+                height: 220px;
+            }
+
+            .micro-particles {
+                width: 140px;
+                height: 140px;
+            }
+
+            .energy-waves {
+                width: 120px;
+                height: 120px;
+            }
+
+            .geometric-pattern {
+                width: 90px;
+                height: 90px;
+            }
+
+            .ring-1 {
+                top: -15px; left: -15px; right: -15px; bottom: -15px;
+            }
+            .ring-2 {
+                top: -25px; left: -25px; right: -25px; bottom: -25px;
+            }
+            .ring-3 {
+                top: -35px; left: -35px; right: -35px; bottom: -35px;
+            }
+            .ring-4 {
+                top: -45px; left: -45px; right: -45px; bottom: -45px;
+            }
+            .ring-5 {
+                top: -55px; left: -55px; right: -55px; bottom: -55px;
+            }
+
+            .logo-glow {
+                top: -60px; left: -60px; right: -60px; bottom: -60px;
+            }
+
+            .pulse-ring-1, .pulse-ring-2, .pulse-ring-3, .pulse-ring-4, .pulse-ring-5 {
+                width: 120px; height: 120px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .logo-icon {
+                width: 100px;
+                height: 100px;
+            }
+
+            .logo-symbol {
+                font-size: 2rem;
+            }
+
+            .logo-text {
+                font-size: 2.2rem;
+            }
+
+            .logo-particles {
+                width: 180px;
+                height: 180px;
+            }
+
+            .micro-particles {
+                width: 120px;
+                height: 120px;
+            }
+
+            .energy-waves {
+                width: 100px;
+                height: 100px;
+            }
+
+            .geometric-pattern {
+                width: 70px;
+                height: 70px;
+            }
+
+            .hexagon {
+                width: 25px;
+                height: 25px;
+            }
+
+            .ring-1 {
+                top: -12px; left: -12px; right: -12px; bottom: -12px;
+            }
+            .ring-2 {
+                top: -20px; left: -20px; right: -20px; bottom: -20px;
+            }
+            .ring-3 {
+                top: -28px; left: -28px; right: -28px; bottom: -28px;
+            }
+            .ring-4 {
+                top: -36px; left: -36px; right: -36px; bottom: -36px;
+            }
+            .ring-5 {
+                top: -44px; left: -44px; right: -44px; bottom: -44px;
+            }
+
+            .logo-glow {
+                top: -50px; left: -50px; right: -50px; bottom: -50px;
+            }
+
+            .pulse-ring-1, .pulse-ring-2, .pulse-ring-3, .pulse-ring-4, .pulse-ring-5 {
+                width: 100px; height: 100px;
+            }
+
+            .logo-container {
+                gap: 1rem;
+                margin-bottom: 2rem;
+            }
         }
 
         /* Responsive design */
@@ -489,11 +1444,74 @@
                 border-radius: 6px;
             }
         }
+
+        /* Smooth scrolling */
+        html {
+            scroll-behavior: smooth;
+        }
+
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>Chace Liu</h1>
+        <!-- Ultra-Complex Sophisticated Logo Masterpiece -->
+        <div class="logo-container">
+            <div class="logo-wrapper">
+                <div class="logo-icon">
+                    <div class="logo-core">
+                        <div class="logo-ring ring-1"></div>
+                        <div class="logo-ring ring-2"></div>
+                        <div class="logo-ring ring-3"></div>
+                        <div class="logo-ring ring-4"></div>
+                        <div class="logo-ring ring-5"></div>
+                        <div class="logo-center">
+                            <div class="logo-symbol">C</div>
+                            <div class="logo-particles">
+                                <div class="particle particle-1"></div>
+                                <div class="particle particle-2"></div>
+                                <div class="particle particle-3"></div>
+                                <div class="particle particle-4"></div>
+                                <div class="particle particle-5"></div>
+                                <div class="particle particle-6"></div>
+                            </div>
+                            <div class="micro-particles">
+                                <div class="micro-particle micro-particle-1"></div>
+                                <div class="micro-particle micro-particle-2"></div>
+                                <div class="micro-particle micro-particle-3"></div>
+                                <div class="micro-particle micro-particle-4"></div>
+                                <div class="micro-particle micro-particle-5"></div>
+                                <div class="micro-particle micro-particle-6"></div>
+                                <div class="micro-particle micro-particle-7"></div>
+                                <div class="micro-particle micro-particle-8"></div>
+                            </div>
+                            <div class="geometric-pattern">
+                                <div class="hexagon hex-1"></div>
+                                <div class="hexagon hex-2"></div>
+                                <div class="hexagon hex-3"></div>
+                                <div class="hexagon hex-4"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="energy-waves">
+                        <div class="energy-wave wave-1"></div>
+                        <div class="energy-wave wave-2"></div>
+                        <div class="energy-wave wave-3"></div>
+                        <div class="energy-wave wave-4"></div>
+                        <div class="energy-wave wave-5"></div>
+                        <div class="energy-wave wave-6"></div>
+                    </div>
+                    <div class="logo-glow"></div>
+                    <div class="logo-pulse-rings">
+                        <div class="pulse-ring pulse-ring-1"></div>
+                        <div class="pulse-ring pulse-ring-2"></div>
+                        <div class="pulse-ring pulse-ring-3"></div>
+                        <div class="pulse-ring pulse-ring-4"></div>
+                        <div class="pulse-ring pulse-ring-5"></div>
+                    </div>
+                </div>
+            </div>
+            <h1 class="logo-text">Chace</h1>
+        </div>
         <div class="accent-line"></div>
         <p class="welcome-message">Welcome to my coding portfolio!</p>
         <p class="subtitle">Software Engineer & Developer</p>
@@ -501,8 +1519,9 @@
         <!-- Navigation Section -->
         <div class="navigation-section">
             <a href="about.html" class="nav-button">About Me 👦</a>
-            <a href="games.html" class="nav-button">Play Games 🎮</a>
+            <a href="games.html" class="nav-button">Games 🎮</a>
         </div>
+
     </div>
 
 </body>
