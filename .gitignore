@@ -50,3 +50,4 @@ build/
 website/
 *.bak
 *.backup
+*.zip
