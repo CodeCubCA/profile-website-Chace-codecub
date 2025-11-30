@@ -477,6 +477,12 @@
             background: linear-gradient(135deg, #46E3B7, #5DE0C4);
         }
 
+        .tech-badge.huggingface {
+            background: linear-gradient(135deg, #FFD21E, #FF9D0B);
+            color: #000;
+            text-shadow: none;
+        }
+
         .ai-button {
             background: linear-gradient(135deg, #9B59B6, #EC4899);
             color: white;
@@ -491,6 +497,18 @@
             transform: translateY(-3px) scale(1.05);
             box-shadow: 0 8px 20px rgba(167, 112, 239, 0.5);
             background: linear-gradient(135deg, #9B59B6, #BF7FE5, #F5A9BB);
+        }
+
+        .hf-button {
+            background: linear-gradient(135deg, #FFD21E, #FF9D0B);
+            color: #000;
+            font-weight: 700;
+        }
+
+        .hf-button:hover {
+            transform: translateY(-3px) scale(1.05);
+            box-shadow: 0 8px 20px rgba(255, 210, 30, 0.6);
+            background: linear-gradient(135deg, #FFED4E, #FFB627);
         }
 
         .ai-button:hover {
@@ -782,7 +800,7 @@
                         <span class="featured-badge">⭐ Featured Project</span>
                         <h3 class="project-title">Voice AI Assistant 🎤</h3>
                         <p class="project-description">
-                            An intelligent voice-enabled chatbot powered by Google Gemini API, featuring real-time speech-to-text input, natural text-to-speech output, and seamless AI conversations. Built as part of the AI with Python course at CodeCub, this project showcases advanced AI integration with voice capabilities. Experience hands-free interaction using the Web Speech API for voice input, and enjoy natural AI responses through Google Text-to-Speech. The assistant offers three distinct personality modes: Friendly for warm and supportive conversations, Professional for expert-level guidance, and Creative for imaginative and artistic interactions. Customize your experience with adjustable voice settings including speed control and multi-language support. Features include a real-time chat interface with full message history, continuous conversation context for natural dialogue flow, responsive design for seamless mobile and desktop usage, and instant AI-powered responses using Gemini 1.5 Flash. Deployed on Render with automatic HTTPS and continuous deployment, making it accessible anywhere for instant voice-powered AI assistance.
+                            An intelligent voice-enabled chatbot powered by Google Gemini API, featuring real-time speech-to-text input, natural text-to-speech output, and seamless AI conversations. Built as part of the AI with Python course at CodeCub, this project showcases advanced AI integration with voice capabilities. Experience hands-free interaction using the Web Speech API for voice input, and enjoy natural AI responses through Google Text-to-Speech. The assistant offers three distinct personality modes: Friendly for warm and supportive conversations, Professional for expert-level guidance, and Creative for imaginative and artistic interactions. Customize your experience with adjustable voice settings including speed control and multi-language support. Features include a real-time chat interface with full message history, continuous conversation context for natural dialogue flow, responsive design for seamless mobile and desktop usage, and instant AI-powered responses using Gemini 1.5 Flash. Deployed on multiple platforms for maximum reliability and community visibility - demonstrating professional DevOps practices with dual deployment on both Render (with automatic HTTPS and continuous deployment) and Hugging Face Spaces (for community accessibility and discoverability), making it accessible anywhere for instant voice-powered AI assistance.
                         </p>
                         <div class="tech-stack">
                             <span class="tech-badge python">Python</span>
@@ -791,6 +809,7 @@
                             <span class="tech-badge gtts">gTTS</span>
                             <span class="tech-badge voice">Web Speech API</span>
                             <span class="tech-badge render">Render</span>
+                            <span class="tech-badge huggingface">HuggingFace</span>
                         </div>
                     </div>
                     <div class="project-buttons">
@@ -801,7 +820,10 @@
                             View Code
                         </a>
                         <a href="https://voice-ai-assistant-l8hg.onrender.com/" target="_blank" class="project-button voice-button">
-                            🎤 Live Demo
+                            🎤 Render Demo
+                        </a>
+                        <a href="https://huggingface.co/spaces/Chace-codecub/voice-ai-assistant" target="_blank" class="project-button hf-button">
+                            🤗 HF Spaces
                         </a>
                     </div>
                 </div>

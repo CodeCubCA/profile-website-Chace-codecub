@@ -43,8 +43,9 @@ Showcasing my best work with detailed project cards:
 - Multiple personality modes (Friendly, Professional, Creative)
 - Customizable voice settings (speed, language)
 - AI-powered conversations with Google Gemini 1.5 Flash
-- **Tech Stack:** Python, Streamlit, Google Gemini API, gTTS, Web Speech API, Render
-- [🎤 Live Demo](https://voice-ai-assistant-l8hg.onrender.com/) | [📂 Repository](https://github.com/CodeCubCA/voice-ai-assistant-chace)
+- **Dual Deployment:** Demonstrating professional DevOps practices with deployment on both Render and Hugging Face Spaces for maximum reliability and community visibility
+- **Tech Stack:** Python, Streamlit, Google Gemini API, gTTS, Web Speech API, Render, HuggingFace
+- [🎤 Render Demo](https://voice-ai-assistant-l8hg.onrender.com/) | [🤗 HF Spaces](https://huggingface.co/spaces/Chace-codecub/voice-ai-assistant) | [📂 Repository](https://github.com/CodeCubCA/voice-ai-assistant-chace)
 
 #### 2. **Personal Portfolio Website** (This Site!)
 - Interactive portfolio with advanced animations
@@ -311,7 +312,7 @@ Hi! I'm **Chace Liu**, an 11-year-old coding enthusiast with a passion for creat
 
 - **Website:** [https://Chace.codecub.org](https://Chace.codecub.org)
 - **GitHub:** [CodeCubCA](https://github.com/CodeCubCA)
-- **Voice AI Assistant:** [Try Live](https://voice-ai-assistant-l8hg.onrender.com/)
+- **Voice AI Assistant:** [Render Demo](https://voice-ai-assistant-l8hg.onrender.com/) | [HuggingFace Demo](https://huggingface.co/spaces/Chace-codecub/voice-ai-assistant)
 - **AI Chatbox Project:** [Try Live](https://ai-chatbox-Chace-codecub.streamlit.app)
 
 ---
