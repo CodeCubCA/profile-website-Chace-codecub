@@ -450,9 +450,36 @@
             background: linear-gradient(135deg, #EC4899, #F472B6);
         }
 
+        .tech-badge.gemini {
+            background: linear-gradient(135deg, #4285F4, #34A853);
+        }
+
+        .tech-badge.gtts {
+            background: linear-gradient(135deg, #FF6B9D, #C06C84);
+        }
+
+        .tech-badge.voice {
+            background: linear-gradient(135deg, #A770EF, #CF8BF3, #FDB99B);
+        }
+
+        .tech-badge.render {
+            background: linear-gradient(135deg, #46E3B7, #5DE0C4);
+        }
+
         .ai-button {
             background: linear-gradient(135deg, #9B59B6, #EC4899);
             color: white;
+        }
+
+        .voice-button {
+            background: linear-gradient(135deg, #A770EF, #CF8BF3, #FDB99B);
+            color: white;
+        }
+
+        .voice-button:hover {
+            transform: translateY(-3px) scale(1.05);
+            box-shadow: 0 8px 20px rgba(167, 112, 239, 0.5);
+            background: linear-gradient(135deg, #9B59B6, #BF7FE5, #F5A9BB);
         }
 
         .ai-button:hover {
@@ -659,6 +686,67 @@
                 transform: translateY(-10px);
             }
         }
+
+        /* Voice AI Assistant Project Styles */
+        .project-card.voice-ai {
+            background-image:
+                linear-gradient(rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15)),
+                linear-gradient(135deg, #A770EF, #CF8BF3, #FDB99B, #FF6B9D);
+            margin-bottom: 3rem;
+        }
+
+        .project-card.voice-ai::before {
+            background: conic-gradient(from 0deg,
+                #A770EF 0deg, #CF8BF3 90deg, #FDB99B 180deg,
+                #FF6B9D 270deg, #A770EF 360deg);
+        }
+
+        .project-card.voice-ai::after {
+            background: linear-gradient(135deg,
+                rgba(167, 112, 239, 0.7) 0%,
+                rgba(207, 139, 243, 0.5) 25%,
+                rgba(253, 185, 155, 0.7) 50%,
+                rgba(255, 107, 157, 0.5) 75%,
+                rgba(167, 112, 239, 0.7) 100%);
+        }
+
+        .project-card.voice-ai:hover {
+            box-shadow:
+                0 25px 50px rgba(0, 0, 0, 0.2),
+                0 0 50px rgba(167, 112, 239, 0.7),
+                inset 0 0 35px rgba(207, 139, 243, 0.3);
+        }
+
+        .project-card.voice-ai .project-image {
+            background: linear-gradient(135deg, rgba(167, 112, 239, 0.3), rgba(207, 139, 243, 0.3));
+        }
+
+        .featured-badge {
+            display: inline-block;
+            padding: 0.5rem 1rem;
+            background: linear-gradient(135deg, #FFD700, #FFA500);
+            color: #000;
+            font-weight: 700;
+            font-size: 0.85rem;
+            border-radius: 20px;
+            margin-bottom: 1rem;
+            box-shadow: 0 4px 15px rgba(255, 215, 0, 0.4);
+            animation: badgePulse 2s ease-in-out infinite;
+            border: 2px solid rgba(255, 255, 255, 0.5);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        @keyframes badgePulse {
+            0%, 100% {
+                transform: scale(1);
+                box-shadow: 0 4px 15px rgba(255, 215, 0, 0.4);
+            }
+            50% {
+                transform: scale(1.05);
+                box-shadow: 0 6px 20px rgba(255, 215, 0, 0.6);
+            }
+        }
     </style>
 </head>
 <body>
@@ -672,6 +760,41 @@
         <!-- Projects Section -->
         <div class="projects-section">
             <h2 class="projects-title">💻 Featured Projects 💻</h2>
+
+            <!-- Voice AI Assistant Project Card (FEATURED) -->
+            <div class="project-card voice-ai">
+                <div class="project-image">
+                    <img src="img/voice-ai-assistant.png" alt="Voice AI Assistant Screenshot" onerror="this.style.display='none'; this.parentElement.innerHTML='<div style=\'display:flex;align-items:center;justify-content:center;font-size:5rem;color:rgba(255,255,255,0.8);height:100%;\'>🎤</div>'">
+                </div>
+                <div class="project-content">
+                    <div>
+                        <span class="featured-badge">⭐ Featured Project</span>
+                        <h3 class="project-title">Voice AI Assistant 🎤</h3>
+                        <p class="project-description">
+                            An intelligent voice-enabled chatbot powered by Google Gemini API, featuring real-time speech-to-text input, natural text-to-speech output, and seamless AI conversations. Built as part of the AI with Python course at CodeCub, this project showcases advanced AI integration with voice capabilities. Experience hands-free interaction using the Web Speech API for voice input, and enjoy natural AI responses through Google Text-to-Speech. The assistant offers three distinct personality modes: Friendly for warm and supportive conversations, Professional for expert-level guidance, and Creative for imaginative and artistic interactions. Customize your experience with adjustable voice settings including speed control and multi-language support. Features include a real-time chat interface with full message history, continuous conversation context for natural dialogue flow, responsive design for seamless mobile and desktop usage, and instant AI-powered responses using Gemini 1.5 Flash. Deployed on Render with automatic HTTPS and continuous deployment, making it accessible anywhere for instant voice-powered AI assistance.
+                        </p>
+                        <div class="tech-stack">
+                            <span class="tech-badge python">Python</span>
+                            <span class="tech-badge streamlit">Streamlit</span>
+                            <span class="tech-badge gemini">Google Gemini API</span>
+                            <span class="tech-badge gtts">gTTS</span>
+                            <span class="tech-badge voice">Web Speech API</span>
+                            <span class="tech-badge render">Render</span>
+                        </div>
+                    </div>
+                    <div class="project-buttons">
+                        <a href="https://github.com/CodeCubCA/voice-ai-assistant-chace" target="_blank" class="project-button github-button">
+                            <svg class="github-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                            </svg>
+                            View Code
+                        </a>
+                        <a href="https://voice-ai-assistant-l8hg.onrender.com/" target="_blank" class="project-button voice-button">
+                            🎤 Live Demo
+                        </a>
+                    </div>
+                </div>
+            </div>
 
             <!-- Personal Portfolio Website Project Card -->
             <div class="project-card">

@@ -36,14 +36,24 @@ An interactive and visually stunning personal portfolio website featuring advanc
 ### 💻 Projects Portfolio
 Showcasing my best work with detailed project cards:
 
-#### 1. **Personal Portfolio Website** (This Site!)
+#### 1. **Voice AI Assistant** 🎤 ⭐ FEATURED
+- Full-featured AI chatbot with voice input and output capabilities
+- Real-time speech-to-text using Web Speech API
+- Natural text-to-speech output with Google TTS
+- Multiple personality modes (Friendly, Professional, Creative)
+- Customizable voice settings (speed, language)
+- AI-powered conversations with Google Gemini 1.5 Flash
+- **Tech Stack:** Python, Streamlit, Google Gemini API, gTTS, Web Speech API, Render
+- [🎤 Live Demo](https://voice-ai-assistant-l8hg.onrender.com/) | [📂 Repository](https://github.com/CodeCubCA/voice-ai-assistant-chace)
+
+#### 2. **Personal Portfolio Website** (This Site!)
 - Interactive portfolio with advanced animations
 - Glassmorphism UI with responsive design
 - Particle Playground with 5 interactive modes
 - **Tech Stack:** HTML5, CSS3, JavaScript, Git, GitHub
 - [🚀 Live Demo](https://Chace.codecub.org) | [📂 Repository](https://github.com/CodeCubCA/profile-website-Chace-codecub)
 
-#### 2. **AI Chatbox**
+#### 3. **AI Chatbox**
 - Intelligent AI-powered chatbot for student learning
 - Real-time conversation with context awareness
 - Deployed with CI/CD on Streamlit Cloud
@@ -87,6 +97,7 @@ Showcasing my best work with detailed project cards:
 Each section has a unique gradient theme:
 - **Home:** Blue spectrum (#0080ff, #0066cc, #004499)
 - **About:** Multi-color gradients (Pink, Sky Blue, Green)
+- **Projects - Voice AI Assistant:** Purple to pink (#A770EF, #CF8BF3, #FDB99B, #FF6B9D)
 - **Projects - Portfolio:** Cyan to purple (#00D4FF, #5B73FF, #9B59B6)
 - **Projects - AI Chatbox:** Indigo to pink (#6366F1, #9B59B6, #EC4899)
 - **Games:** Rainbow particle effects with dynamic hue rotation
@@ -300,6 +311,7 @@ Hi! I'm **Chace Liu**, an 11-year-old coding enthusiast with a passion for creat
 
 - **Website:** [https://Chace.codecub.org](https://Chace.codecub.org)
 - **GitHub:** [CodeCubCA](https://github.com/CodeCubCA)
+- **Voice AI Assistant:** [Try Live](https://voice-ai-assistant-l8hg.onrender.com/)
 - **AI Chatbox Project:** [Try Live](https://ai-chatbox-Chace-codecub.streamlit.app)
 
 ---
